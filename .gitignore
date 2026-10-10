@@ -1,0 +1,30 @@
+# 1. Thư mục biên dịch của Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# 2. File cấu hình cá nhân của IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# 3. File code máy Java (đã biên dịch)
+*.class
+
+# 4. File log và các tệp tin tạm
+*.log
+*.tmp
+*.zip
+*.tar.gz
+
+# 5. File ẩn tự sinh của hệ điều hành (Windows/macOS)
+.DS_Store
+Thumbs.db
