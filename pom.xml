@@ -4,15 +4,46 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>vn.edu.uiemthongcam</groupId> <!-- Bạn có thể đổi lại theo tên gói của bạn -->
+    <groupId>vn.edu.uet</groupId>
     <artifactId>BTL-AUCTION-JAVA</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <!-- Khai báo phiên bản Java bạn đang sử dụng, ví dụ ở đây là Java 17 -->
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <!-- Danh sách các thư viện cần tải -->
+    <dependencies>
+        <!-- Thư viện JavaFX chứa các nút bấm, ô nhập liệu... -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>21.0.1</version>
+        </dependency>
+
+        <!-- Thư viện JavaFX để đọc file giao diện .fxml -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>21.0.1</version>
+        </dependency>
+    </dependencies>
+
+    <!-- Cấu hình Plugin hỗ trợ chạy JavaFX -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <!-- Đường dẫn trỏ tới file chạy Main của ứng dụng -->
+                    <mainClass>client.ClientMain</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
